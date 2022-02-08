@@ -4,9 +4,9 @@
       <thead>
         <tr>
           <th>Azonsító</th>
-          <th>Person</th>
-          <th>Height</th>
-          <th>Price</th>
+          <th>Személy</th>
+          <th>Magasság</th>
+          <th>Ár</th>
           <th>Műveletek</th>
         </tr>
       </thead>
@@ -16,6 +16,28 @@
           <td>{{ statue.person }}</td>
           <td>{{ statue.height }}</td>
           <td>{{ statue.price }}</td>
+          <td>
+            <button>Törlés</button>
+            <button>Szerkesztés</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="hidden" v-model="statue.id">
+          </td>
+          <td>
+            <input type="text" v-model="statue.person">
+          </td>
+          <td>
+            <input type="number" v-model="statue.height">
+          </td>
+          <td>
+            <input type="number" v-model="statue.price">
+          </td>
+          <td>
+            <button>Mentés</button>
+            <button>Mégse</button>
+          </td>
         </tr>
       </tbody>
     </table>
