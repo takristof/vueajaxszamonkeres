@@ -1,4 +1,4 @@
-# [Név]
+# [Takáts Kristóf]
 
 ## Hogyan kezdj neki?
 
